@@ -19,22 +19,48 @@ let knexInstance;
 
 // Table schema:
 const tables = Object.freeze({
-    gebruikers: {
-        tableName: 'Gebruikers',
+    admins: {
+        tableName: 'Admins',
         columns: {
-            gebruikerID: 'gebruikerID',
+            adminID: 'adminID',
             voornaam: 'voornaam',
             achternaam: 'achternaam',
-            telefoon: 'telefoon',
             email: 'email',
-            straat: 'straat',
-            nummer: 'nummer',
-            bus: 'bus',
-            woonplaats: 'woonplaats',
-            postcode: 'postcode',
-            land: 'land',
-            wachtwoord: 'wachtwoord',
-            isActief: 'isActief'
+            wachtwoord: 'wachtwoord'
+        }
+    },
+    reservaties: {
+        tableName: 'Reservaties',
+        columns: {
+            reservatieID: 'reservatieID',
+            datum: 'datum',
+            voornaam: 'voornaam',
+            achternaam: 'achternaam',
+            aantalPersonen: 'aantalPersonen',
+            tijdslot: 'tijdslot',
+            reservatietype: 'reservatietype'
+        }
+    },
+    openingsurenBrasserie: {
+        tableName: 'OpeningsurenBrasserie',
+        columns: {
+            brasserieID: 'brasserieID',
+            dag: 'dag',
+            beginUur: 'beginUur',
+            eindUur: 'eindUur',
+            middagMaxAantal: 'middagMaxAantal',
+            avondMaxAantal: 'avondMaxAantal'
+        }
+    },
+    openingsurenFoodtruck: {
+        tableName: 'OpeningsurenFoodtruck',
+        columns: {
+            foodtruckID: 'foodtruckID',
+            datum: 'datum',
+            beginUur: 'beginUur',
+            eindUur: 'eindUur',
+            middagMaxAantal: 'middagMaxAantal',
+            avondMaxAantal: 'avondMaxAantal'
         }
     }
 });
