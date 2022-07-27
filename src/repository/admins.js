@@ -18,7 +18,7 @@ const createAdmin = async ({ voornaam, achternaam, email, wachtwoord }) => {
 };
 
 const getAdmins = async () => {
-    return await getKnex()(tables.admins.tableName).select().where(tables.admins.columns.isActief, 1);
+    return await getKnex()(tables.admins.tableName).select();
 };
 
 const getAdminById = async (adminID) => {

@@ -62,6 +62,14 @@ const tables = Object.freeze({
             middagMaxAantal: 'middagMaxAantal',
             avondMaxAantal: 'avondMaxAantal'
         }
+    },
+    menuItems: {
+        tableName: 'MenuItems',
+        columns: {
+            menuItemID: 'menuItemID',
+            beschrijving: 'beschrijving',
+            prijs: 'prijs'
+        }
     }
 });
 
