@@ -25,6 +25,7 @@ const updateAdmin = async (ctx) => {
 };
 
 const login = async (ctx) => {
+    console.log(ctx.request.body)
     const { email, wachtwoord } = ctx.request.body;
     const session = await adminService.login(email, wachtwoord);
     ctx.body = session;

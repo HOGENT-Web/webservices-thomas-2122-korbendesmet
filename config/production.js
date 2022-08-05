@@ -25,6 +25,11 @@ module.exports = {
       hashLength: 32,
       timeCost: 6,
       memoryCost: 2 ** 17
+    },
+    jwt: {
+      expirationInterval: 60 * 60 * 1000,
+      issuer: 'quarante.store',
+      audience: 'quarante.store'
     }
   }
 }

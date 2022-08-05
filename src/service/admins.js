@@ -2,6 +2,7 @@
 const { getChildLogger } = require('../core/logging');
 const adminRepository = require('../repository/admins');
 const { hashPassword, verifyPassword } = require('../core/password');
+const { generateJWT } = require('../core/jwt');
 
 const debugLog = (message, meta = {}) => {
     if (!this.logger) {
@@ -9,9 +10,23 @@ const debugLog = (message, meta = {}) => {
         this.logger.debug(message, meta);
     };
 };
+const splitAdmin = ({ adminID, voornaam, achternaam, email, wachtwoord }) => ({
+    adminID, voornaam, achternaam, email, wachtwoord
+});
+
+const makeLoginData = async (admin) => {
+    console.log(admin)
+    const token = await generateJWT(admin);
+
+    return {
+        admin: splitAdmin(admin),
+        token
+    };
+};
 
 const createAdmin = async ({ voornaam, achternaam, email, wachtwoord }) => {
     debugLog('Creating new admin', { voornaam, achternaam, email, wachtwoord });
+
     wachtwoord = await hashPassword(wachtwoord);
     const admin = await adminRepository.createAdmin({ voornaam, achternaam, email, wachtwoord });
 

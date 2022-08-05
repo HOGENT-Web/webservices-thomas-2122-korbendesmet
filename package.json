@@ -11,6 +11,7 @@
     "@koa/router": "^11.0.1",
     "argon2": "^0.28.7",
     "config": "^3.3.7",
+    "jsonwebtoken": "^8.5.1",
     "knex": "^2.1.0",
     "koa": "^2.13.4",
     "koa-bodyparser": "^4.3.0",
