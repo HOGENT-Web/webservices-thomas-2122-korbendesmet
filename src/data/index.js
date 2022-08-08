@@ -36,6 +36,8 @@ const tables = Object.freeze({
             datum: 'datum',
             voornaam: 'voornaam',
             achternaam: 'achternaam',
+            telefoon: 'telefoon',
+            email: 'email',
             aantalPersonen: 'aantalPersonen',
             tijdslot: 'tijdslot',
             reservatietype: 'reservatietype'

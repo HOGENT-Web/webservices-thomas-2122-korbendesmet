@@ -9,9 +9,9 @@ const debugLog = (message, meta = {}) => {
     };
 };
 
-const createReservatie = async ({ datum, voornaam, achternaam, aantalPersonen, tijdslot, reservatietype }) => {
-    debugLog('Creating new reservatie', { datum, voornaam, achternaam, aantalPersonen, tijdslot, reservatietype });
-    const reservatie = await reservatieRepository.createReservatie({ datum, voornaam, achternaam, aantalPersonen, tijdslot, reservatietype });
+const createReservatie = async ({ datum, voornaam, achternaam, telefoon, email, aantalPersonen, tijdslot, reservatietype }) => {
+    debugLog('Creating new reservatie', { datum, voornaam, achternaam, telefoon, email, aantalPersonen, tijdslot, reservatietype });
+    const reservatie = await reservatieRepository.createReservatie({ datum, voornaam, achternaam, telefoon, email, aantalPersonen, tijdslot, reservatietype });
 
     return getReservatieById(reservatie);
 };
@@ -26,9 +26,9 @@ const getReservatieById = async (reservatie) => {
     return await reservatieRepository.getReservatieById(reservatie);
 };
 
-const updateReservatie = async (reservatieID, { datum, voornaam, achternaam, aantalPersonen, tijdslot, reservatietype }) => {
-    debugLog(`Updating reservatie ${reservatieID}`, { datum, voornaam, achternaam, aantalPersonen, tijdslot, reservatietype });
-    const reservatie = reservatieRepository.updateReservatie(reservatieID, { datum, voornaam, achternaam, aantalPersonen, tijdslot, reservatietype });
+const updateReservatie = async (reservatieID, { datum, voornaam, achternaam, telefoon, email, aantalPersonen, tijdslot, reservatietype }) => {
+    debugLog(`Updating reservatie ${reservatieID}`, { datum, voornaam, achternaam, telefoon, email, aantalPersonen, tijdslot, reservatietype });
+    const reservatie = reservatieRepository.updateReservatie(reservatieID, { datum, voornaam, achternaam, telefoon, email, aantalPersonen, tijdslot, reservatietype });
 
     return reservatie;
 };

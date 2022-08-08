@@ -9,6 +9,8 @@ module.exports = {
                 datum: '2022-08-20',
                 voornaam: 'Korben',
                 achternaam: 'De Smet',
+                telefoon: '+32472840064',
+                email: 'korbendesmet@hotmail.com',
                 aantalPersonen: '2',
                 tijdslot: 'middag',
                 reservatietype: 'brasserie'
@@ -18,6 +20,8 @@ module.exports = {
                 datum: '2022-08-20',
                 voornaam: 'Korben',
                 achternaam: 'De Smet',
+                telefoon: '+32472840064',
+                email: 'korbendesmet@hotmail.com',
                 aantalPersonen: '1',
                 tijdslot: 'avond',
                 reservatietype: 'brasserie'
@@ -27,6 +31,8 @@ module.exports = {
                 datum: '2022-08-20',
                 voornaam: 'Korben',
                 achternaam: 'De Smet',
+                telefoon: '+32472840064',
+                email: 'korbendesmet@hotmail.com',
                 aantalPersonen: '4',
                 tijdslot: 'middag',
                 reservatietype: 'brasserie'
@@ -36,6 +42,8 @@ module.exports = {
                 datum: '2022-08-22',
                 voornaam: 'Korben',
                 achternaam: 'De Smet',
+                telefoon: '+32472840064',
+                email: 'korbendesmet@hotmail.com',
                 aantalPersonen: '3',
                 tijdslot: 'avond',
                 reservatietype: 'foodtruck'

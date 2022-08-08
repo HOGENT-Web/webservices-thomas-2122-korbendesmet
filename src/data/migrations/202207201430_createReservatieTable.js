@@ -15,6 +15,12 @@ module.exports = {
             table.string(tables.reservaties.columns.achternaam)
                 .notNullable();
 
+            table.string(tables.reservaties.columns.telefoon)
+                .notNullable();
+
+            table.string(tables.reservaties.columns.email)
+                .notNullable();
+
             table.integer(tables.reservaties.columns.aantalPersonen)
                 .notNullable();
 

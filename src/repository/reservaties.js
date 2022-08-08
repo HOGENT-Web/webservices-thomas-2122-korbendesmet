@@ -3,10 +3,10 @@ const { getKnex, tables } = require('../data/index');
 const { getChildLogger } = require('../core/logging');
 
 // CRUD Methods
-const createReservatie = async ({ datum, voornaam, achternaam, aantalPersonen, tijdslot, reservatietype }) => {
+const createReservatie = async ({ datum, voornaam, achternaam, telefoon, email, aantalPersonen, tijdslot, reservatietype }) => {
     try {
         return reservatie = await getKnex()(tables.reservaties.tableName)
-            .insert({ datum, voornaam, achternaam, aantalPersonen, tijdslot, reservatietype })
+            .insert({ datum, voornaam, achternaam, telefoon, email, aantalPersonen, tijdslot, reservatietype })
             .select(getKnex().raw('LAST_INSERT_ID()'));
 
     } catch (error) {
@@ -27,10 +27,10 @@ const getReservatieById = async (reservatie) => {
         .first();
 };
 
-const updateReservatie = async (id, { datum, voornaam, achternaam, aantalPersonen, tijdslot, reservatietype }) => {
+const updateReservatie = async (id, { datum, voornaam, achternaam, telefoon, email, aantalPersonen, tijdslot, reservatietype }) => {
     try {
         return await getKnex()(tables.reservaties.tableName)
-            .update({ datum, voornaam, achternaam, aantalPersonen, tijdslot, reservatietype })
+            .update({ datum, voornaam, achternaam, telefoon, email, aantalPersonen, tijdslot, reservatietype })
             .where(tables.reservaties.columns.reservatieID, id);
 
     } catch (error) {
