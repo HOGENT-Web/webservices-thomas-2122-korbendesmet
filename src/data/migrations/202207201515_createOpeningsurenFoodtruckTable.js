@@ -6,7 +6,7 @@ module.exports = {
             table.increments(tables.openingsurenFoodtruck.columns.foodtruckID)
                 .primary();
 
-            table.date(tables.openingsurenFoodtruck.columns.datum)
+            table.string(tables.openingsurenFoodtruck.columns.dag)
                 .notNullable();
 
             table.time(tables.openingsurenFoodtruck.columns.beginUur)

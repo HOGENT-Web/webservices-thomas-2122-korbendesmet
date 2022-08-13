@@ -58,7 +58,7 @@ const tables = Object.freeze({
         tableName: 'OpeningsurenFoodtruck',
         columns: {
             foodtruckID: 'foodtruckID',
-            datum: 'datum',
+            dag: 'dag',
             beginUur: 'beginUur',
             eindUur: 'eindUur',
             middagMaxAantal: 'middagMaxAantal',

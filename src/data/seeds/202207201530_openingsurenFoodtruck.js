@@ -5,7 +5,7 @@ module.exports = {
 
         await knex(tables.openingsurenFoodtruck.tableName).insert([
             {
-                brasserieID: '1',
+                foodtruckID: '1',
                 dag: 'maandag',
                 beginUur: '10:00:00.0000000',
                 eindUur: '20:00:00.0000000',
@@ -13,7 +13,7 @@ module.exports = {
                 avondMaxAantal: '30'
             },
             {
-                brasserieID: '2',
+                foodtruckID: '2',
                 dag: 'dinsdag',
                 beginUur: '10:00:00.0000000',
                 eindUur: '20:00:00.0000000',
@@ -21,7 +21,7 @@ module.exports = {
                 avondMaxAantal: '30'
             },
             {
-                brasserieID: '3',
+                foodtruckID: '3',
                 dag: 'woensdag',
                 beginUur: '10:00:00.0000000',
                 eindUur: '20:00:00.0000000',
@@ -29,7 +29,7 @@ module.exports = {
                 avondMaxAantal: '30'
             },
             {
-                brasserieID: '4',
+                foodtruckID: '4',
                 dag: 'donderdag',
                 beginUur: '10:00:00.0000000',
                 eindUur: '20:00:00.0000000',
@@ -37,7 +37,7 @@ module.exports = {
                 avondMaxAantal: '30'
             },
             {
-                brasserieID: '5',
+                foodtruckID: '5',
                 dag: 'vrijdag',
                 beginUur: '10:00:00.0000000',
                 eindUur: '20:00:00.0000000',
@@ -45,7 +45,7 @@ module.exports = {
                 avondMaxAantal: '30'
             },
             {
-                brasserieID: '6',
+                foodtruckID: '6',
                 dag: 'zaterdag',
                 beginUur: '10:00:00.0000000',
                 eindUur: '20:00:00.0000000',
@@ -53,7 +53,7 @@ module.exports = {
                 avondMaxAantal: '30'
             },
             {
-                brasserieID: '7',
+                foodtruckID: '7',
                 dag: 'zondag',
                 beginUur: '00:00:00.0000000',
                 eindUur: '00:00:00.0000000',
