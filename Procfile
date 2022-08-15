@@ -1,0 +1,1 @@
+web: npx env-cmd node src/index.js
