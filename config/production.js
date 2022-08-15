@@ -16,7 +16,7 @@ module.exports = {
     name: 'DATABASE_NAME',
   },
   cors: {
-    origins: ['http://localhost:3000'],
+    origins: ['http://localhost:3000', 'https://hogent-web.github.io/'],
     maxAge: 3 * 60 * 60,
   },
   auth: {

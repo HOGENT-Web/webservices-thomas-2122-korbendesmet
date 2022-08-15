@@ -1,6 +1,6 @@
 {
-  "name": "webservices-thomas-2122-korbendesmet",
-  "repository": "https://github.com/HOGENT-Web/webservices-thomas-2122-korbendesmet.git",
+  "name": "quarante-backend",
+  "repository": "https://github.com/KorbenDeSmet/quarante-backend.git",
   "author": "KorbenDeSmet <korbendesmet@hotmail.com>",
   "license": "MIT",
   "scripts": {
