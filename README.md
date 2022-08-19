@@ -1,6 +1,6 @@
 # Quarante
 
-De Quarante api wordt gebruikt om de quarante web applicatie te verbinden met de databank en dergelijke queries uit te voeren. Ook is hij verantwoordelijk om de tabellen aan te maken en de sql databank te vullen met data.
+De Quarante api wordt gebruikt om de quarante web applicatie te verbinden met de databank en dergelijke query's uit te voeren. Ook is hij verantwoordelijk om de tabellen aan te maken en de sql databank te vullen met data.
 
 
 ## Technische praat
