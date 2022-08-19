@@ -5,7 +5,7 @@ De Quarante api wordt gebruikt om de quarante web applicatie te verbinden met de
 
 ## Technische praat
 
-Deze applicatie is gemaakt  met node en bestaat uit een rest, service en repository laag.
+Deze applicatie is gemaakt  met node en bestaat uit een rest, service, repository en data laag.
 
 Vervolgens zijn dit alle imports:
 
